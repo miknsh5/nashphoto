@@ -41,7 +41,7 @@ if(trim($name) == '') {
 
 
 
-$address = 'hello@email.com';
+$address = 'franknash@nashphoto.com';
 
 
 

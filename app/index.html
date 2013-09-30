@@ -12,8 +12,13 @@
         <title>Nash Photographic</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+        <link href="styles/reset.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="styles/contact.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="styles/styles.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="styles/flexslider.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="styles/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen" />
 
-        <!--[if gt IE 8]><link href="styles/retina-responsive.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+        <!--[if gt IE 8]><!--><link href="styles/retina-responsive.css" rel="stylesheet" type="text/css" media="screen" /><!--<![endif]-->
         <!--[if !IE]> <link href="styles/retina-responsive.css" rel="stylesheet" type="text/css" media="screen" /> <![endif]-->
         <!--[if gt IE6]> <link href="styles/styles-ie.css" rel="stylesheet" type="text/css" media="screen" /> <![endif]-->
 
@@ -21,16 +26,11 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css(.tmp) styles/main.css -->
-        <link href="styles/reset.css" rel="stylesheet" type="text/css" media="screen" />
-        <link href="styles/contact.css" rel="stylesheet" type="text/css" media="screen" />
-        <link href="styles/styles.css" rel="stylesheet" type="text/css" media="screen" />
-        <link href="styles/flexslider.css" rel="stylesheet" type="text/css" media="screen">
-        <link href="styles/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen" />
-        <link href="styles/print.css" rel="stylesheet" type="text/css" media="print" />
 
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
 
+        <link href="styles/print.css" rel="stylesheet" type="text/css" media="print" />
 
 
 
@@ -53,9 +53,9 @@
               <ul id="filters" class="option-set clearfix" data-option-key="filter">
                 <li><a href="#filter=.home" class="selected">Home</a></li>
                 <li><a href="#filter=.services">Services</a></li>
-                <li><a href="#filter=.portfolio">Portfolio</a></li>
+                <!-- <li><a href="#filter=.portfolio">Portfolio</a></li> -->
                 <li><a href="#filter=.about">About</a></li>
-                <li><a href="#filter=.blog">Blog</a></li>
+                <li><a href="#filter=.clients">Clients</a></li>
                 <li><a href="#filter=.contact">Contact</a></li>
               </ul>
             </div>
@@ -65,25 +65,28 @@
         <!-- end header -->
         <div class="container">
           <div id="container" class="clearfix">
+
             <div class="element  clearfix col1-1 home">
               <div class="col2-3">
                 <div class="flexslider">
                   <div class="images">
                     <ul class="slides">
-                      <li><img src="images/pic1.jpg" alt="" /></li>
+                      <li><img src="images/marcus-belgrave-mod.jpg" alt="marcus belgrave" /></li>
                       <li><img src="images/pic1b.jpg" alt="" /></li>
                     </ul>
                   </div>
                 </div>
               </div>
               <div class="col1-3 white-right">
-                <h2>Taking pictures</h2>
-                <p>Is my passion sapien massa, a imperdiet diam. Aliquam erat volutpat. Sed consectetur suscipit nunc et rutrum. </p>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo tristique odio, quis fringilla ligula aliquet utpisci. </p>
-                <p class="small bottom"><a href="#filter=.blog">Visit my blog <span class="arrow">→</span></a></p>
+                <h2>Professional Photography</h2>
+                <p>It's my passion and my work.</p>
+                <p>From products to people, my career is defined by photography.  Whether on location or in the studio, I'm hear to provide solutions to your photography needs from digital to print.</p>
+                <p>-Frank Nash</p>
+                <!-- <p class="small bottom"><a href="#filter=.blog">Visit my blog <span class="arrow">→</span></a></p> -->
               </div>
               <div class="clear"></div>
             </div>
+
             <div class="element clearfix col1-3 portfolio menu">
               <div class="images"><img src="images/pic6.jpg" alt="" /></div>
               <div class="white-bottom">
@@ -95,69 +98,204 @@
                   <a href="#filter=.all,+.menu">View all <span class="arrow">→</span></a></p>
               </div>
             </div>
-            <div class="element  clearfix col1-3 home poland all overflow">
-              <div class="images"><img src="images/pic2.jpg" alt="" /> <a href="images/pic2.jpg" title="" rel="group">
+            
+            <!-- Places -->
+            <div class="element  clearfix col1-3 home places all overflow">
+              <div class="images"><img src="images/bradbury-building-los-angeles.jpg" alt="" /> <a href="images/bradbury-building-los-angeles.jpg" title="" rel="group">
                 <div class="title">
                   <div class="title-wrap">
-                    <h3><span class="zoom">View Larger</span> <span>Proud Woman</span> </h3>
+                    <h3><span class="zoom">View Larger</span> <span>Bradbury Building</span> </h3>
                   </div>
                 </div>
                 <div class="subtitle">
                   <div class="subtitle-wrap">
-                    <p> <span>Poland, 2012</span> </p>
+                    <p> <span>Los Angeles, 1984</span> </p>
                   </div>
                 </div>
                 </a> </div>
             </div>
-            <div class="element clearfix col1-3 services">
-              <div class="images"><img src="images/pic7.jpg" alt="" /></div>
-              <div class="white-bottom">
-                <h2>My Services</h2>
-                <p>Phasellus leo ante, posuere in fringilla vitae, pretium at dui. Fusce et neque quis odio gravida auctor vel non mauris. Vivamus gravida aliquet eros.</p>
+
+            <div class="element  clearfix col1-3 home places all overflow">
+              <div class="images">
+                <img src="images/4x5lens.jpg" alt="4x5 camera lens" /> 
+                <a href="images/4x5lens.jpg" title="4x5 Camera Lens" rel="group">
+                  <div class="title">
+                    <div class="title-wrap">
+                      <h3><span class="zoom">View Larger</span> <span>4x5 Camera</span> </h3>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
-            <div class="element  clearfix col2-3 services">
-              <div class="col1-3 connect">
-                <div class="images"><img src="images/pic11.jpg" alt="" /></div>
+
+
+          <!-- CLIENTS PAGE -->
+
+            <div class="element  clearfix col1-1 clients">
+              <div class="col2-3">
+                <div class="images">
+                  <img src="images/detroit-skyline.jpg" alt="Detroit, MI skyline" />
+                </div>
               </div>
-              <div class="col1-3 white-right2">
-                <h2>What I Offer</h2>
-                <h4>Option A</h4>
-                <p>Is my passion sapien massa, a imperdiet diam. Aliquam erat volutpat. </p>
-                <h4>Option B</h4>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                <p class="small bottom"><a href="#filter=.contact">Book me!</a></p>
+              <div class="col1-3 white-right">
+                <h2>Client List</h2>
+                <p>I've had the pleasure to work with the following incredible customers, mostly all right here in Metro Detroit.</p>
+                <p>Gatorade</p>
+                <!-- <p class="small bottom"><a href="#filter=.blog">Visit my blog <span class="arrow">→</span></a></p> -->
               </div>
               <div class="clear"></div>
             </div>
-            <div class="element  clearfix col1-3 all portfolio germany overflow">
-              <div class="images"><img src="images/pic15.jpg" alt="" /> <a href="images/pic15.jpg" title="" rel="group">
+
+
+          <!-- ABOUT FRANK PAGE -->
+            <div class="element  clearfix col2-3 about post">
+              <div class="images"><img src="images/frank-nash.png" alt="" /><a href="#filter=.blog">
+                </a></div>
+              <div class="white-bottom">
+                <h2>Frank Nash</h2>
+                <p>I started Nash Photographic in 1987.</p>
+                <p> As a kid, I never consciously thought of becoming a commercial photographer.  I was simply fascinated by the way images would magically appear in a tray of Dektrol in my Mom's makeshift bathroom lab.  To me, the camera and a roll of tri-x was just the coolest way to be hip and creative at the same time. </p>
+                <p> Yet, here I am, 40 years later, still getting that same rush from watching a digital image appear on the computer.  My prio career as a pre-press technician made the switch to digital seem like a walk in the park. And as long as that fascination continues, I'll be pushing my craft and creating images that can deliver a visual message to your audience. </p>
+                <!-- <p class="blockquote">" Mauris pellentesque, elit at interdum adipiscing, sapien urna sagittis nisi, in placerat orci quam varius sapien. Suspendisse auctor nulla id augue mollis tempor. "<span>– Johnathan Doe</span></p> -->
+                <p>Drop me a line if you'd like to discuss how I can help with your next project.</p>
+                <p>-Frank</p>
+              </div>
+            </div>
+
+
+          <!-- SERVICES PAGE -->
+            <!-- .....PRODUCTS -->
+            <div class="element  clearfix col2-3 services">
+              <div class="col1-3 connect">
+                <div class="images"><img src="images/pear-bowl.jpg" alt="Bowl of Pears" />
+                <a href="images/pear-bowl.jpg" title="" rel="group">
+                   <div class="title">
+                     <div class="title-wrap">
+                       <h3><span class="zoom">View Larger</span> <span>Pepsi Brand</span> </h3>
+                     </div>
+                   </div>
+                   <div class="subtitle">
+                     <div class="subtitle-wrap">
+                       <p> <span>Los Angeles, 1984</span> </p>
+                     </div>
+                   </div>
+                 </a>   
+                </div>
+              </div>
+              <div class="col1-3 white-right2">
+                <h2>Products</h2>
+                <h4>Still Life</h4>
+                <p>Capture the details of your product. More description about what you do for product photography.</p>
+   <!--              <h4>Action Shots</h4>
+                <p>Action shots can capture the essence of your customer engaging with your product. It's about connecting a brand with a persona, and helping your customer see themselves engaging with your product.</p> -->
+                <!-- <p class="small bottom"><a href="#filter=.contact">Book me!</a></p> -->
+              </div>
+              <div class="clear"></div>
+            </div>
+
+            <div class="element  clearfix col1-3 home services all overflow">
+              <div class="images"><img src="images/wine1.jpg" alt="" /> <a href="images/wine1.jpg" title="" rel="group">
                 <div class="title">
                   <div class="title-wrap">
-                    <h3><span class="zoom">View Larger</span> <span>Ambitions</span></h3>
+                    <h3><span class="zoom">View Larger</span> <span>Pepsi Brand</span> </h3>
                   </div>
                 </div>
                 <div class="subtitle">
                   <div class="subtitle-wrap">
-                    <p> <span>Germany, 2012</span> </p>
+                    <p> <span>Los Angeles, 1984</span> </p>
                   </div>
                 </div>
                 </a> </div>
             </div>
+
+            <div class="element  clearfix col1-3 home services all overflow">
+              <div class="images"><img src="images/cherry-salsa.jpg" alt="" /> <a href="images/cherry-salsa.jpg" title="faygo orange pop" rel="group">
+                <div class="title">
+                  <div class="title-wrap">
+                    <h3><span class="zoom">View Larger</span> <span>Pepsi Brand</span> </h3>
+                  </div>
+                </div>
+                <div class="subtitle">
+                  <div class="subtitle-wrap">
+                    <p> <span>Los Angeles, 1984</span> </p>
+                  </div>
+                </div>
+                </a> </div>
+            </div>
+
+
+            <!-- .....PEOPLE -->
+           <div class="element  clearfix col2-3 services">
+             <div class="col1-3 connect">
+               <div class="images"><img src="images/macks-earplugs.jpg" alt="Bowl of Pears" /></div>
+             </div>
+             <div class="col1-3 white-right2">
+               <h2>People</h2>
+               <h4>Action</h4>
+               <p>Action shots can capture the essence of your customer engaging with your product. It's about connecting a brand with a persona, and helping your customer see themselves engaging with your product.</p>
+             </div>
+             <div class="clear"></div>
+           </div>
+
+
+           <div class="element  clearfix col1-1 services">
+             <div class="col2-3">
+               <div class="images">
+                 <img src="images/detroit-skyline.jpg" alt="Detroit, MI skyline" />
+               </div>
+             </div>
+             <div class="col1-3 white-right">
+               <h2>Places</h2>
+               <p>From dealerships to city skylines, greater metropolitan Detroit is my extended office.</p>
+             </div>
+             <div class="clear"></div>
+           </div>
+
+           <div class="element  clearfix col1-3 home services all overflow">
+             <div class="images"><img src="images/dealership-vw.jpg" alt="" /> <a href="images/dealership-vw-lg.jpg" title="faygo orange pop" rel="group">
+               <div class="title">
+                 <div class="title-wrap">
+                   <h3><span class="zoom">View Larger</span> <span>Pepsi Brand</span> </h3>
+                 </div>
+               </div>
+               <div class="subtitle">
+                 <div class="subtitle-wrap">
+                   <p> <span>Los Angeles, 1984</span> </p>
+                 </div>
+               </div>
+               </a> </div>
+           </div>
+
+           <div class="element  clearfix col2-3 home services all overflow">
+             <div class="images"><img src="images/autoshow-mercedes.jpg" alt="" /> <a href="images/autoshow-mercedes-lg.jpg" title="faygo orange pop" rel="group">
+               <div class="title">
+                 <div class="title-wrap">
+                   <h3><span class="zoom">View Larger</span> <span>Pepsi Brand</span> </h3>
+                 </div>
+               </div>
+               <div class="subtitle">
+                 <div class="subtitle-wrap">
+                   <p> <span>Los Angeles, 1984</span> </p>
+                 </div>
+               </div>
+               </a> </div>
+           </div>
+
             <div class="element  clearfix col1-3 home">
-              <div class="images"><img src="images/pic3.jpg" alt="" />
-                <div class="icons award"></div>
+              <div class="images"><img src="images/furcoat.jpg" alt="" />
+                <!-- <div class="icons award"></div> -->
               </div>
-              <div class="white-bottom">
-                <h2>Award Winning</h2>
+              <div class="white-bottom white-bottom-half">
+                <h2>People</h2>
                 <ul class="list">
-                  <li>Most Creative Company</li>
-                  <li>GUA Photography Award</li>
-                  <li>Featured in CSS Awards</li>
-                  <li>Best Customer Support in two consecutive years</li>
+                  <li>Corporate Media</li>
+                  <li>Professional Headshots</li>
+                  <li>Movie Crew Shadowing</li>
                 </ul>
               </div>
             </div>
+
+
             <div class="element clearfix col1-3 auto all portfolio germany">
               <div class="images"><img src="images/pic12.jpg" alt="" /> <a href="images/pic1.jpg" title="" rel="group">
                 <div class="title">
@@ -187,47 +325,21 @@
                 </a> </div>
             </div>
             <div class="element clearfix col1-3 all denmark home">
-              <div class="images"><img src="images/pic4.jpg" alt="" /> <a href="images/pic4.jpg" title="" rel="group">
+              <div class="images"><img src="images/pear-bowl.jpg" alt="" /> <a href="images/pear-bowl.jpg" title="" rel="group">
                 <div class="title">
                   <div class="title-wrap">
-                    <h3><span class="zoom">View Larger</span> <span>Dark Outlook</span></h3>
+                    <h3><span class="zoom">View Larger</span> <span>Bowl of Pears<span></h3>
                   </div>
                 </div>
-                <div class="subtitle">
-                  <div class="subtitle-wrap">
-                    <p> <span>Denmark, 2012</span> </p>
-                  </div>
-                </div>
+                <!-- <div class="subtitle"> -->
+                  <!-- <div class="subtitle-wrap"> -->
+                    <!-- <p> <span>Denmark, 2012</span> </p> -->
+                  <!-- </div> -->
+                <!-- </div> -->
                 </a> </div>
             </div>
-            <div class="element home clearfix col1-3 all portfolio germany">
-              <div class="images"><img src="images/pic5.jpg" alt="" /> <a href="images/pic5.jpg" title="" rel="group">
-                <div class="title">
-                  <div class="title-wrap">
-                    <h3><span class="zoom">View Larger</span> <span>Chilling Summer</span></h3>
-                  </div>
-                </div>
-                <div class="subtitle">
-                  <div class="subtitle-wrap">
-                    <p> <span>Germany, 2013</span> </p>
-                  </div>
-                </div>
-                </a> </div>
-            </div>
-            <div class="element home clearfix col1-3 all poland">
-              <div class="images"><img src="images/pic9.jpg" alt="" /> <a href="images/pic9.jpg" title="" class="popup">
-                <div class="title">
-                  <div class="title-wrap">
-                    <h3><span class="zoom">View Larger</span> <span>Just Married</span></h3>
-                  </div>
-                </div>
-                <div class="subtitle">
-                  <div class="subtitle-wrap">
-                    <p> <span>Poland, 2013</span> </p>
-                  </div>
-                </div>
-                </a> </div>
-            </div>
+            
+
             <div class="element  clearfix col1-3 all denmark">
               <div class="images"><img src="images/pic14.jpg" alt="" /> <a href="images/pic14.jpg" title="" class="popup">
                 <div class="title">
@@ -242,13 +354,10 @@
                 </div>
                 </a> </div>
             </div>
-            <div class="element home clearfix col1-3 about">
-              <div class="images"><img src="images/pic7.jpg" alt="" /></div>
-              <div class="white-bottom">
-                <h2>About me</h2>
-                <p>Phasellus leo ante, posuere in fringilla vitae, pretium at dui. Fusce et neque quis odio gravida auctor vel non mauris. Vivamus gravida aliquet eros.</p>
-              </div>
-            </div>
+
+
+
+
             <div class="element  clearfix col1-3 blog blog1"> <a href="#filter=.blog%3Anot(.blog1),+.post1">
               <div class="images"><img src="images/pic8.jpg" alt="" />
                 <div class="icons aside"></div>
@@ -258,6 +367,7 @@
                 <p>Phasellus leo ante, posuere in fringilla vitae, pretium at dui. Fusce et neque quis odio gravida auctor vel non mauris.</p>
               </div>
               </a> </div>
+
             <div class="element  clearfix col2-3 post post1">
               <div class="images"><img src="images/blog-post.jpg" alt="" /><a href="#filter=.blog">
                 <div class="icons close"></div>
@@ -376,20 +486,22 @@
               </div>
             </div>
             <div class="element home clearfix col1-3 contact">
-              <div class="images"><img src="images/pic8.jpg" alt="" />
-                <div class="icons bubble"></div>
+              <div class="images"><img class="one-third" src="images/corvette.jpg" alt="" />
               </div>
               <div class="white-bottom">
-                <h2>Contact me</h2>
-                <p>22 Miron Drive<br />
-                  New York City, 12603 NY</p>
-                <p> E-Mail: <a href="mailto:hello@domain.com" title="send email">hello@domain.com</a><br />
-                  Phone: 845- 123 4567</p>
+                <h2>Contact Info</h2>
+                <p>Frank Nash<br />
+                <a href="mailto:frank@nashphoto.com" title="send email">frank@nashphoto.com</a><br />
+                  Phone: (248) 867-3704 <br />
+                  Troy, MI <br />
+                  <a href="http://linkedin.com/in/frankwnash" class="social-icon"><img src="images/linkedin.png" alt="linkedin" /></a>
+                  </p>
+
               </div>
             </div>
             <div class="element  clearfix col2-3 contact">
-              <div class="col1-3 connect">
-                <div class="images"><img src="images/pic11.jpg" alt="" /></div>
+              <div class="col1-3 connect messageform">
+                <div class="images"><img src="images/green-park.jpg" alt="" /></div>
               </div>
               <div class="col1-3 white-right2">
                 <h2>Drop me a Line</h2>
@@ -412,22 +524,7 @@
               </div>
               <div class="clear"></div>
             </div>
-            <div class="element home clearfix col2-3 all portfolio denmark about">
-              <div class="images"><img src="images/pic10.jpg" alt="" />
-                <div class="icons video"></div>
-                <a class="video-popup tippy" href="http://player.vimeo.com/video/48792900?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff">
-                <div class="title">
-                  <div class="title-wrap">
-                    <h3><span class="zoom play">Play</span> <span>Quiet Village</span></h3>
-                  </div>
-                </div>
-                <div class="subtitle">
-                  <div class="subtitle-wrap">
-                    <p> <span>Denmark, 2013</span> </p>
-                  </div>
-                </div>
-                </a> </div>
-            </div>
+
           </div>
         </div>
         <!-- end header -->
