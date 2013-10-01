@@ -1,12 +1,13 @@
 {
   "name": "nashphoto",
   "version": "0.0.0",
-  "dependencies": {
-    "sass-bootstrap": "~3.0.0",
-    "requirejs": "~2.1.8",
+  "dependencies": {},
+  "devDependencies": {
     "modernizr": "~2.6.2",
-    "jquery": "~1.10.2",
-    "retina.js": "~1.1.0"
-  },
-  "devDependencies": {}
+    "jquery": "~2.0.3",
+    "isotope": "~1.5.25",
+    "retina.js": "~1.1.0",
+    "responsive-nav": "~1.0.23",
+    "scrollup": "*"
+  }
 }
