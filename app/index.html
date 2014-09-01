@@ -13,12 +13,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
-        <link href="styles/reset.css" rel="stylesheet" type="text/css" media="screen" />
-        <link href="styles/contact.css" rel="stylesheet" type="text/css" media="screen" />
-        <link href="styles/styles.css" rel="stylesheet" type="text/css" media="screen" />
-        <link href="styles/flexslider.css" rel="stylesheet" type="text/css" media="screen">
-        <link href="styles/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen" />
-        <link href="styles/retina-responsive.css" rel="stylesheet" type="text/css" media="screen" />
 
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,600,800' rel='stylesheet' type='text/css' />
 
@@ -26,6 +20,12 @@
 
         <!-- build:css({.tmp,app}) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
+        <link href="styles/reset.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="styles/contact.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="styles/styles.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="styles/flexslider.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="styles/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="styles/retina-responsive.css" rel="stylesheet" type="text/css" media="screen" />
         <!-- endbuild -->
 
         <link href="styles/print.css" rel="stylesheet" type="text/css" media="print" />
@@ -81,19 +81,6 @@
               <div class="clear"></div>
             </div>
 
-            <div class="element clearfix col1-3 portfolio menu">
-              <div class="images"><img src="images/pic6.jpg" alt="" /></div>
-              <div class="white-bottom">
-                <h2>Featured Works</h2>
-                <p>Browse the whole portfolio:</p>
-                <p class="small"><a href="#filter=.poland,+.menu">Made in Poland <span class="arrow">→</span></a><br />
-                  <a href="#filter=.denmark,+.menu">Taken in Denmark <span class="arrow">→</span></a><br />
-                  <a href="#filter=.germany,+.menu">My Trip to Germany <span class="arrow">→</span></a><br />
-                  <a href="#filter=.all,+.menu">View all <span class="arrow">→</span></a></p>
-              </div>
-            </div>
-            
-
 
             <div class="element  clearfix col1-3 home places all overflow">
               <div class="images"><img src="images/bradbury-building-los-angeles.jpg" alt="" /> <a href="images/bradbury-building-los-angeles.jpg" title="" rel="group">
@@ -132,9 +119,16 @@
                 </div>
               </div>
               <div class="col1-3 white-right">
-                <h2>Client List</h2>
+                <h2>Clients</h2>
                 <p>I've had the pleasure to work with the following incredible customers, mostly all right here in Metro Detroit.</p>
-                <p>Gatorade</p>
+                <ul class="list-clients">
+                  <li><a href="http://www.gm.com/" target="_blank">General Motors</a></li>
+                  <li><a href="http://www.jackmorton.com/" target="_blank">Jack Morton</a></li>
+                  <li><a href="http://www.brasco.com/" target="_blank">Brasco International</a></li>
+                  <li><a href="http://www.electricsix.com/" target="_blank">Electric Six</a></li>
+                  <li><a href="http://www.macksearplugs.com/" target="_blank">Mack's</a></li>
+                  <li>More...</li>
+                </ul>
                 <!-- <p class="small bottom"><a href="#filter=.blog">Visit my blog <span class="arrow">→</span></a></p> -->
               </div>
               <div class="clear"></div>
@@ -149,10 +143,40 @@
                 <p>I started Nash Photographic in 1987.</p>
                 <p> As a kid, I never consciously thought of becoming a commercial photographer.  I was simply fascinated by the way images would magically appear in a tray of Dektrol in my Mom's makeshift bathroom lab.  To me, the camera and a roll of tri-x was just the coolest way to be hip and creative at the same time. </p>
                 <p> Yet, here I am, 40 years later, still getting that same rush from watching a digital image appear on the computer.  My prior career as a pre-press technician made the switch to digital seem like a walk in the park. And as long as that fascination continues, I'll keep pushing my craft and looking for opportunities to help clients visually communicate the story of their brand, culture, and people. </p>
-                <!-- <p class="blockquote">" Mauris pellentesque, elit at interdum adipiscing, sapien urna sagittis nisi, in placerat orci quam varius sapien. Suspendisse auctor nulla id augue mollis tempor. "<span>– Johnathan Doe</span></p> -->
                 <p>Drop me a line if you'd like to discuss how I can help with your next project.</p>
                 <p>-Frank</p>
               </div>
+            </div>
+
+            <div class="element clearfix col1-3 about">
+              <!-- <div class="col1-3 connect messageform">
+                <div class="images"><img src="images/green-park.jpg" alt="" /></div>
+              </div> -->
+              <div class="col1-3 white-right2">
+                <h2>Drop me a Line</h2>
+                <p>I'm always looking for new projects.</p>
+                <h4>Phone: (248) 867-3704</h4>
+                <h4>Email: <a href="mailto:frank@nashphoto.com?subject=Nashphoto Inquiry" target="_top">frank@nashphoto.com</a>
+                </h4>
+                <h4 class="behance"><img src="images/logoBehance.png" alt="behance logo" class="behance">Behance Portfolio</h4>
+<!--                 <div id="contact">
+                  <div id="message"></div>
+                  <form method="post" action="contact.php" name="contactform" id="contactform" autocomplete="off">
+                    <fieldset>
+                    <div class="alignleft padding-right">
+                      <label for="name" accesskey="U"><span class="required">Name</span></label>
+                      <input name="name" type="text" id="name" size="30" title="Name *" />
+                      <label for="email" accesskey="E"><span class="required">Email</span></label>
+                      <input name="email" type="text" id="email" size="30" title="Email *" />
+                    </div>
+                    <label for="comments" accesskey="C"><span class="required">Comments</span></label>
+                    <textarea name="comments" cols="40" rows="3" id="comments" title="Comment *"></textarea>
+                    <input type="submit" class="submit" id="submit" value="» Submit" />
+                    </fieldset>
+                  </form>
+                </div> -->
+              </div>
+              <div class="clear"></div>
             </div>
 
 
@@ -275,35 +299,7 @@
             </div>
 
 
-            <div class="element clearfix col1-3 auto all portfolio germany">
-              <div class="images"><img src="images/pic12.jpg" alt="" /> <a href="images/pic1.jpg" title="" rel="group">
-                <div class="title">
-                  <div class="title-wrap">
-                    <h3><span class="zoom">View Larger</span> <span>What a Picture</span></h3>
-                  </div>
-                </div>
-                <div class="subtitle">
-                  <div class="subtitle-wrap">
-                    <p> <span>Germany, 2013</span> </p>
-                  </div>
-                </div>
-                </a> </div>
-            </div>
 
-            <div class="element clearfix col1-3 auto all portfolio germany">
-              <div class="images"><img src="images/pic13.jpg" alt="" /> <a href="images/pic13.jpg" title="" rel="group">
-                <div class="title">
-                  <div class="title-wrap">
-                    <h3><span class="zoom">View Larger</span> <span>Posing Musician</span></h3>
-                  </div>
-                </div>
-                <div class="subtitle">
-                  <div class="subtitle-wrap">
-                    <p> <span>Germany, 2013</span> </p>
-                  </div>
-                </div>
-                </a> </div>
-            </div>
 
             <div class="element clearfix col1-3 all denmark home">
               <div class="images"><img src="images/pear-bowl.jpg" alt="" /> <a href="images/pear-bowl.jpg" title="" rel="group">

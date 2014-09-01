@@ -9,6 +9,32 @@
     padding: 0.2em 0;
 }
 
+ul.list-clients {
+	margin: 10px 10px 10px 60px;
+
+	li {
+		margin-top: 5px;
+	}
+
+	a {
+		color: blue;
+	}
+
+}
+
+img.behance {
+	position: absolute;
+	margin-left: -70px;
+	margin-top: -15px;
+}
+
+h4.behance {
+	margin-left: 70px;
+	margin-top: 20px;
+	padding-top: 40px;
+	// border-top: solid 1px #222;
+}
+
 // /* Space out content a bit */
 // body {
 //     padding-top: 20px;
